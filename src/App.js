@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
+import ResponsiveCart from "./components/main/ResponsiveCart";
 
 const App = () => {
   const [data, setData] = useState();
@@ -33,6 +34,7 @@ const App = () => {
         cart={{ items: cartItems, setItems: setCartItems }}
       />
       <Footer />
+      <ResponsiveCart items={cartItems} setItems={setCartItems} />
     </div>
   );
 };
