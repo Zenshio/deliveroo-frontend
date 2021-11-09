@@ -4,6 +4,7 @@ import "./App.css";
 
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const [data, setData] = useState();
@@ -31,6 +32,7 @@ const App = () => {
         categories={data.categories}
         cart={{ items: cartItems, setItems: setCartItems }}
       />
+      <Footer />
     </div>
   );
 };
